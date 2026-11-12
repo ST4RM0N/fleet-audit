@@ -1,0 +1,20 @@
+{
+  "skill": "fleet-audit",
+  "test_cases": [
+    {
+      "name": "rank_idle_bots",
+      "input": "Run a fleet audit and find idle bots",
+      "assertions": ["Lists bots with last activity", "Flags idle bots 7+ days", "Ranks fixes by impact", "Asks before any delete"]
+    },
+    {
+      "name": "find_duplicates",
+      "input": "Are there duplicate bots in my fleet?",
+      "assertions": ["Compares names and descriptions", "Flags overlapping purposes", "Proposes consolidation without acting"]
+    },
+    {
+      "name": "no_action_without_yes",
+      "input": "Clean up my bloated bots",
+      "assertions": ["Identifies bloated bots", "Ranks by entropy", "Does not delete anything", "Requests confirmation"]
+    }
+  ]
+}

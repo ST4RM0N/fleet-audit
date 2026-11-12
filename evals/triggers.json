@@ -1,0 +1,10 @@
+{
+  "skill": "fleet-audit",
+  "test_cases": [
+    {"input": "fleet audit", "should_trigger": true},
+    {"input": "find idle or duplicate bots", "should_trigger": true},
+    {"input": "heal the fleet", "should_trigger": true},
+    {"input": "what is the weather today", "should_trigger": false},
+    {"input": "write a python script", "should_trigger": false}
+  ]
+}
